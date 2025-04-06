@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayoub Web Design | Diseño Web Profesional</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1>Ayoub Web Design</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h2>Potencia tu negocio con una web profesional</h2>
+      <p>Diseño sitios web modernos, rápidos y enfocados en convertir visitantes en clientes.</p>
+      <a href="#contacto" class="btn">Hablemos por WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="slider">
+    <div class="slider-container">
+      <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80" alt="Diseño web profesional" />
+      </div>
+      <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa7023?auto=format&fit=crop&w=1350&q=80" alt="Programador trabajando" />
+      </div>
+      <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1581093588401-75f58f7e06c2?auto=format&fit=crop&w=1350&q=80" alt="Cliente feliz con su web" />
+      </div>
+      <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1350&q=80" alt="Pantalla con código" />
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="servicios">
+    <div class="container">
+      <h2>Servicios</h2>
+      <ul>
+        <li>✅ Diseño web moderno y responsive</li>
+        <li>✅ Optimización para Google (SEO)</li>
+        <li>✅ Integración con WhatsApp, redes y formularios</li>
+        <li>✅ Hosting, dominio y configuración completa</li>
+        <li>✅ Mantenimiento mensual opcional</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Mi Trabajo</h2>
+      <p>Algunos ejemplos de páginas web que he diseñado:</p>
+      <div class="grid">
+        <img src="https://images.unsplash.com/photo-1607619056573-d7709b54b9f2?auto=format&fit=crop&w=600&q=80" alt="Ejemplo web 1">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=600&q=80" alt="Ejemplo web 2">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Ejemplo web 3">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Ejemplo web 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <p>Soy Ayoub, diseñador web ubicado en Braga, Portugal. Ayudo a emprendedores y negocios a tener una presencia online impactante. Combino creatividad, estrategia y tecnología para entregar sitios que no solo se ven bien, sino que también funcionan.</p>
+      <p>Trabajo con pasión, cuidando cada detalle: desde el diseño visual hasta la experiencia del usuario. ¿Quieres una web que te represente y te ayude a vender más? ¡Estoy aquí para ayudarte!</p>
+    </div>
+  </section>
+
+  <section class="clientes">
+    <div class="container">
+      <h2>Lo que dicen mis clientes</h2>
+      <div class="testimonios">
+        <blockquote>“Ayoub me creó una página moderna y rápida, mis ventas crecieron en la primera semana.” – Marta, Braga</blockquote>
+        <blockquote>“Muy profesional, siempre disponible y con ideas muy creativas.” – João, Porto</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Puedes escribirme directamente a mi WhatsApp o email:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:fakihayoub940@gmail.com">fakihayoub940@gmail.com</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/351912531775" target="_blank">+351 912 531 775</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ayoub Web Design. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000);
+    }
+    showSlides();
+  </script>
+</body>
+</html>
+
