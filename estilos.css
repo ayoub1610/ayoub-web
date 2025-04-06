@@ -1,0 +1,187 @@
+  /* estilos.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff99aa;
+  }
+  
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80') center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero .btn {
+    background-color: #ff99aa;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .hero .btn:hover {
+    background-color: #e86c88;
+  }
+  
+  section {
+    padding: 4rem 1rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .servicios ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .grid img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s;
+  }
+  
+  .grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  .sobre p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonios blockquote {
+    background-color: #f3f3f3;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 5px solid #ff99aa;
+    font-style: italic;
+    border-radius: 8px;
+  }
+  
+  .contacto ul {
+    margin-top: 1rem;
+  }
+  
+  .contacto li {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* SLIDER */
+  .slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 2rem auto;
+  }
+  
+  .slider-container {
+    position: relative;
+    height: 400px;
+  }
+  
+  .slide {
+    display: none;
+    height: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .fade {
+    animation: fade 1s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  }
+  
